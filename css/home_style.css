@@ -1,0 +1,25 @@
+body{
+ font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #444;
+  overflow-x: hidden;
+}
+
+.travel-navbar{
+background: rgba(37, 54, 169, 0.55);
+position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+.nav-link, .logo, .login-button {
+  color: #fff !important;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.6);
+}
+
+.nav-item{
+color: white;
+font-weight: 300;
+}
