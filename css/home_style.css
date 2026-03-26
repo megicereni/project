@@ -32,4 +32,43 @@ color: white;
 font-weight: 300;
 }
 
+.hero-section h1{
+font-family: 'Playfair Display', serif;
+font-size: 5rem;
+font-weight: 800;
+color: white;
+letter-spacing: 0.5px;
+text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+}
+.hero-section {
+  background-image: url(../images/greece2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-btn{
+  background: #E91E8C;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 40px;
+  font-size: 1rem;
+  font-family:"Playfair Display",serif;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #fff;
+  color: #E91E8C;
+  transform: scale(1.05);
+}
+
 
