@@ -118,4 +118,18 @@ margin: 30px 0px;
 word-spacing: 1.5px;
 letter-spacing: 0.5px;
 }
+.photo{
+width: 150px;
+}
+.card-title, .card-text {
+  margin-left: 10px !important;
+}
 
+.review-cards {
+  transition: transform 0.3s ease;
+
+}
+.review-cards:hover{
+transform: translateY(-10px);
+box-shadow: 0 10px 20px rgba(0,0,0,0.2)
+}
