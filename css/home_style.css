@@ -28,9 +28,6 @@ letter-spacing: 0.5px;
 text-decoration: none;
 }
 
-.nav-item{
-color: white;
-}
 .nav-link1{
 transition: color 0.3s ease transform 0.3s ease-in-out;
 }
