@@ -1,0 +1,143 @@
+body{
+ font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #444;
+  overflow-x: hidden;
+}
+
+.travel-navbar{
+background: rgba(37, 54, 169, 0.55);
+position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+.nav-link, .logo, .login-button {
+  color: #fff !important;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.6);
+}
+
+.logo{
+text-transform: uppercase;
+font-family: "Raleway",sans-serif;
+font-size:  35px;
+font-weight: 600;
+letter-spacing: 0.5px;
+}
+
+.nav-item{
+color: white;
+font-weight: 300;
+}
+.nav-link{
+transition: color 0.3s ease transform 0.3s ease-in-out;
+}
+.nav-link:hover{
+ color: #E91E8C  !important;
+ transform: scale(1.15);
+}
+.container{
+ margin-bottom: 30px;
+}
+.login-button{
+font-family: "Raleway",sans-serif;
+background: #4A90E2;
+color: white;
+padding: 10px 24px;
+border-radius: 20px;
+}
+.login-button:hover {
+  background: #357ABD;
+  color: #fff;
+}
+.hero-btn{
+  background: #E91E8C;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 40px;
+  font-size: 1rem;
+  font-family:"Playfair Display",serif;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #fff;
+  color: #E91E8C;
+  transform: scale(1.05);
+}
+
+
+.about-hero {
+    background-image: url('../images/about2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    font-weight: 800;
+    color: white;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+}
+
+.about-hero p {
+    color: rgba(255,255,255,0.88);
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+}
+
+.headline {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #222;
+}
+/* Ngjyrat tek kartat e about  */
+.pink-line {
+    width: 50px;
+    height: 4px;
+    background: #E91E8C;
+    border-radius: 2px;
+    margin: 10px auto 0;
+}
+
+.value-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #E91E8C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.about-card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid #E91E8C;
+}
+
+.about-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(233, 30, 140, 0.2);
+}
+
+.about-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #222;
+}
