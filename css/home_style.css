@@ -14,8 +14,8 @@ position: fixed;
   width: 100%;
   z-index: 100;
 }
-.nav-link, .logo, .login-button {
-  color: #fff !important;
+.nav-link1, .logo, .login-button {
+  color: #fff;
   text-shadow: 0 1px 6px rgba(0,0,0,0.6);
 }
 
@@ -25,16 +25,17 @@ font-family: "Raleway",sans-serif;
 font-size:  35px;
 font-weight: 600;
 letter-spacing: 0.5px;
+text-decoration: none;
 }
 
 .nav-item{
 color: white;
 }
-.nav-link{
+.nav-link1{
 transition: color 0.3s ease transform 0.3s ease-in-out;
 }
-.nav-link:hover{
- color: #E91E8C  !important;
+.nav-link1:hover{
+ color: #E91E8C;
  transform: scale(1.05);
 }
 .container{
@@ -133,3 +134,4 @@ width: 150px;
 transform: translateY(-10px);
 box-shadow: 0 10px 20px rgba(0,0,0,0.2)
 }
+
