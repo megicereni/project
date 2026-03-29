@@ -131,4 +131,36 @@ width: 150px;
 transform: translateY(-10px);
 box-shadow: 0 10px 20px rgba(0,0,0,0.2)
 }
+.review-badge{
+background:  #E91E8C;
+}
+.review-btn {
+  background: linear-gradient(135deg, #3b82f6, #ec4899);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.review-btn:hover {
+  box-shadow: 0 5px 15px rgba(236,72,153,0.4);
+}
+@media (max-width: 768px) {
+  .review-box {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
+footer{
+background: #1e3a8a;
+}
 
+footer .copyright{
+background: rgba(0, 0, 0, 0.2);
+}
+.newsletter input{
+max-width: 220px;
+height: 35px;
+}
