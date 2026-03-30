@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Payment</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-5">
+
+<h2 class="mb-4">💳 Payment Details</h2>
+
+<div class="card p-4">
+  <p><strong>Name:</strong> <span id="name"></span></p>
+  <p><strong>Email:</strong> <span id="email"></span></p>
+  <p><strong>Total:</strong> <span id="total"></span></p>
+
+  <hr>
+
+  <form onsubmit="pay(event)">
+    <div class="mb-3">
+      <label>Card Number</label>
+      <input type="text" class="form-control" placeholder="1234 5678 9012 3456" required>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <label>Expiry</label>
+        <input type="text" class="form-control" placeholder="MM/YY" required>
+      </div>
+      <div class="col-md-6">
+        <label>CVV</label>
+        <input type="text" class="form-control" placeholder="123" required>
+      </div>
+    </div>
+
+    <button class="btn btn-success mt-3 w-100">Pay Now</button>
+  </form>
+</div>
+
+<script>
+const data = JSON.parse(localStorage.getItem("booking"));
+
+document.getElementById("name").innerText = data.name;
+document.getElementById("email").innerText = data.email;
+document.getElementById("total").innerText = data.total;
+
+function pay(e){
+  e.preventDefault();
+  window.location.href = "success.html";
+}
+</script>
+
+</body>
+</html>
