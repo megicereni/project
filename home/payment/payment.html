@@ -36,22 +36,17 @@
 </div>
 
 <script>
-// Merr të dhënat e rezervimit
-const data = JSON.parse(localStorage.getItem("booking"));
+  // Merr të dhënat nga localStorage
+  const data = JSON.parse(localStorage.getItem("booking"));
 
-document.getElementById("name").innerText  = data.name;
-document.getElementById("email").innerText = data.email;
-document.getElementById("total").innerText = data.total;
+  document.getElementById("name").innerText = data.name;
+  document.getElementById("email").innerText = data.email;
+  document.getElementById("total").innerText = data.total;
 
-function pay(e) {
+  function pay(e) {
     e.preventDefault();
-
-    // Merr faqen origjinale ku u bë Book Now
-    const source = data.source || "package.html";
-
-    // Shko direkt tek ajo faqe — pa success.html
-    window.location.href = source;
-}
+    window.location.href = data.source;
+  }
 </script>
 
 </body>
