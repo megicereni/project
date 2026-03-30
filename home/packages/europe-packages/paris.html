@@ -174,7 +174,7 @@
     </div>
   </div>
 </div><script>
-const pricePerPerson = 1299; // ndrysho sipas paketës
+const pricePerPerson = 899;
 
 const peopleInput = document.getElementById("people");
 const totalPrice = document.getElementById("totalPrice");
@@ -197,6 +197,7 @@ document.getElementById("bookingForm").addEventListener("submit", function(e) {
     people: document.getElementById("people").value,
     date: document.getElementById("date").value,
     total: totalPrice.value
+    source: "paris.html"
   };
 
   localStorage.setItem("booking", JSON.stringify(bookingData));

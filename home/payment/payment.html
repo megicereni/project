@@ -21,7 +21,6 @@
       <label>Card Number</label>
       <input type="text" class="form-control" placeholder="1234 5678 9012 3456" required>
     </div>
-
     <div class="row">
       <div class="col-md-6">
         <label>Expiry</label>
@@ -32,21 +31,26 @@
         <input type="text" class="form-control" placeholder="123" required>
       </div>
     </div>
-
     <button class="btn btn-success mt-3 w-100">Pay Now</button>
   </form>
 </div>
 
 <script>
+// Merr të dhënat e rezervimit
 const data = JSON.parse(localStorage.getItem("booking"));
 
-document.getElementById("name").innerText = data.name;
+document.getElementById("name").innerText  = data.name;
 document.getElementById("email").innerText = data.email;
 document.getElementById("total").innerText = data.total;
 
-function pay(e){
-  e.preventDefault();
-  window.location.href = "success.html";
+function pay(e) {
+    e.preventDefault();
+
+    // Merr faqen origjinale ku u bë Book Now
+    const source = data.source || "package.html";
+
+    // Shko direkt tek ajo faqe — pa success.html
+    window.location.href = source;
 }
 </script>
 
