@@ -1,0 +1,100 @@
+body{
+ font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #444;
+  overflow-x: hidden;
+}
+
+.travel-navbar{
+background: rgba(37, 54, 169, 0.55);
+position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+.nav-link1, .logo, .login-button {
+  color: #fff;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.6);
+}
+
+.logo{
+text-transform: uppercase;
+font-family: "Raleway",sans-serif;
+font-size:  35px;
+font-weight: 600;
+letter-spacing: 0.5px;
+text-decoration: none;
+}
+
+.nav-link1{
+transition: color 0.3s ease transform 0.3s ease-in-out;
+}
+.nav-link1:hover{
+ color: #E91E8C;
+ transform: scale(1.05);
+}
+.container{
+ margin-bottom: 30px;
+}
+.login-button{
+font-family: "Raleway",sans-serif;
+background: #4A90E2;
+color: white;
+padding: 10px 24px;
+border-radius: 20px;
+}
+.login-button:hover {
+  background: #357ABD;
+  color: #fff;
+}
+.hero-section {
+  background-image: url(../images/europe-tour/review.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.box{
+color: white;
+background: rgba(7, 36, 138, 0.63);
+height: 220px;
+padding: 100px;
+margin: 30px 0px;
+word-spacing: 1.5px;
+letter-spacing: 0.5px;
+}
+.review-card{
+max-width: 600px;
+transition: box-shadow 0.3s ease;
+background: linear-gradient(135deg, #ffffff, #f8f9fa);
+}
+.review-card:hover{
+box-shadow: 0 8px 20px rgba(0,0,0,0.3) !important;
+
+}
+.form-control::placeholder{
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+.form-control:focus::placeholder {
+  opacity: 0.3;
+}
+footer{
+background: #1e3a8a;
+}
+
+footer .copyright{
+background: rgba(0, 0, 0, 0.2);
+}
+.newsletter input{
+max-width: 220px;
+height: 35px;
+}
+
