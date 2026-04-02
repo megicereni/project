@@ -18,6 +18,9 @@ position: fixed;
   color: #fff !important;
   text-shadow: 0 1px 6px rgba(0,0,0,0.6);
 }
+.nav-link1.active{
+color: #E91E8C !important;
+}
 
 .logo{
 text-transform: uppercase;
