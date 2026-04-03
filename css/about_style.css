@@ -69,6 +69,17 @@ border-radius: 20px;
   color: #E91E8C;
   transform: scale(1.05);
 }
+footer{
+background: #1e3a8a;
+}
+
+footer .copyright{
+background: rgba(0, 0, 0, 0.2);
+}
+.newsletter input{
+max-width: 220px;
+height: 35px;
+}
 
 
 .about-hero {

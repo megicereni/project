@@ -233,4 +233,15 @@ letter-spacing: 0.5px;
     background: #c7136f;
     transform: scale(1.04);
 }
+footer{
+background: #1e3a8a;
+}
+
+footer .copyright{
+background: rgba(0, 0, 0, 0.2);
+}
+.newsletter input{
+max-width: 220px;
+height: 35px;
+}
 
