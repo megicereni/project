@@ -38,14 +38,14 @@ transition: color 0.3s ease transform 0.3s ease-in-out;
 .container{
  margin-bottom: 30px;
 }
-.login-button{
+.login-button,.btn-review{
 font-family: "Raleway",sans-serif;
 background: #4A90E2;
 color: white;
 padding: 10px 24px;
 border-radius: 20px;
 }
-.login-button:hover {
+.login-button:hover,.btn-review:hover{
   background: #357ABD;
   color: #fff;
 }
