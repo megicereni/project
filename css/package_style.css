@@ -139,16 +139,14 @@ letter-spacing: 0.5px;
 
 .card img {
   width: 100%;
-  height: 250px;       /* FIXON LARTËSINË */
-  object-fit: cover;   /* PRET IMAGIN QË TË MOS DEFORMOHET */
+  height: 250px;
+  object-fit: cover;
 }
 
 .card h3 {
   margin: 10px 0;
 }
-/* ══════════════════════════════════════
-   ITINERARY CARDS
-══════════════════════════════════════ */
+
 
 .itinerary-card {
     border-radius: 16px;
