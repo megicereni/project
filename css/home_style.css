@@ -67,10 +67,7 @@ text-shadow: 0 2px 20px rgba(0,0,0,0.4);
   background-position: center;
   background-repeat: no-repeat;
   height: 600px;
-  display: flex;
   width: 100%;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 
@@ -120,8 +117,8 @@ margin: 30px 0px;
 word-spacing: 1.5px;
 letter-spacing: 0.5px;
 }
-.photo{
-width: 150px;
+.image{
+height: 260px;
 }
 .card-title, .card-text {
   margin-left: 10px !important;
@@ -129,7 +126,6 @@ width: 150px;
 
 .review-cards {
   transition: transform 0.3s ease;
-
 }
 .review-cards:hover{
 transform: translateY(-10px);
