@@ -1,0 +1,214 @@
+* { box-sizing: border-box; }
+  body {
+    font-family: 'Raleway', sans-serif;
+    background: #f4f6fb;
+    margin: 0;
+    color: #333;
+  }
+
+  /* ── NAVBAR ─────────────────────────── */
+  .dash-navbar {
+    background: rgba(37,54,169,0.92);
+    backdrop-filter: blur(10px);
+    padding: 14px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .dash-navbar .brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+  }
+  .dash-navbar .nav-link {
+    color: rgba(255,255,255,0.8) !important;
+    font-size: 0.88rem;
+    font-weight: 500;
+  }
+  .btn-logout {
+    background: #E91E8C;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 7px 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .btn-logout:hover { background: #c7136f; }
+
+  /* ── HERO BAR ────────────────────────── */
+  .dash-hero {
+    background: linear-gradient(135deg, #2536a9 0%, #1a1a5e 100%);
+    padding: 40px 0 50px;
+  }
+  .dash-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.9rem;
+    color: #fff;
+    margin-bottom: 4px;
+  }
+  .dash-hero h1 span { color: #E91E8C; }
+  .dash-hero p { color: rgba(255,255,255,0.7); font-size: 0.9rem; margin: 0; }
+
+  .avatar {
+    width: 60px; height: 60px;
+    background: #E91E8C;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    border: 3px solid rgba(255,255,255,0.3);
+  }
+
+  /* ── STAT CARDS ──────────────────────── */
+  .stat-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px 20px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: transform 0.2s;
+  }
+  .stat-card:hover { transform: translateY(-4px); }
+  .stat-icon {
+    width: 52px; height: 52px;
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.4rem;
+    flex-shrink: 0;
+  }
+  .stat-icon.blue  { background: #e8eeff; color: #2536a9; }
+  .stat-icon.pink  { background: #fde8f3; color: #E91E8C; }
+  .stat-icon.green { background: #e8f5e9; color: #2e7d32; }
+  .stat-icon.gold  { background: #fff8e1; color: #f9a825; }
+  .stat-num  { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: #1a1a5e; line-height: 1; }
+  .stat-label{ font-size: 0.78rem; color: #888; margin-top: 3px; }
+
+  /* ── SECTION TITLES ──────────────────── */
+  .section-head {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1a1a5e;
+    margin-bottom: 16px;
+  }
+  .pink-dot {
+    display: inline-block;
+    width: 8px; height: 8px;
+    background: #E91E8C;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+
+  /* ── PROFILE CARD ────────────────────── */
+  .profile-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 28px 24px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+  }
+  .profile-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.9rem;
+  }
+  .profile-row:last-child { border-bottom: none; }
+  .profile-row .label { color: #888; font-weight: 600; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; }
+  .profile-row .value { color: #333; font-weight: 500; }
+
+  /* ── BOOKING HISTORY ─────────────────── */
+  .booking-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 18px 20px;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.07);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .booking-icon {
+    width: 44px; height: 44px;
+    background: #e8eeff;
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    color: #2536a9;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+  .booking-info h6 { font-size: 0.92rem; font-weight: 700; margin: 0 0 2px; color: #1a1a5e; }
+  .booking-info small { font-size: 0.78rem; color: #888; }
+  .booking-price { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: #E91E8C; white-space: nowrap; }
+  .badge-confirmed { background: #e8f5e9; color: #2e7d32; font-size: 0.72rem; padding: 3px 10px; border-radius: 50px; font-weight: 600; }
+
+  /* ── QUICK LINKS ─────────────────────── */
+  .quick-link {
+    background: #fff;
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.07);
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: block;
+  }
+  .quick-link:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); color: #2536a9; }
+  .quick-link i { font-size: 1.8rem; color: #2536a9; display: block; margin-bottom: 8px; }
+  .quick-link span { font-size: 0.85rem; font-weight: 600; }
+
+  /* ── EDIT FORM ───────────────────────── */
+  .edit-form { display: none; }
+  .edit-form.show { display: block; }
+  .btn-edit {
+    background: none;
+    border: 1.5px solid #2536a9;
+    color: #2536a9;
+    border-radius: 50px;
+    padding: 6px 18px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    transition: all 0.2s;
+  }
+  .btn-edit:hover { background: #2536a9; color: #fff; }
+  .btn-save {
+    background: #E91E8C;
+    border: none;
+    color: #fff;
+    border-radius: 50px;
+    padding: 9px 24px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    margin-top: 12px;
+    transition: all 0.2s;
+  }
+  .btn-save:hover { background: #c7136f; }
+  .form-control-sm {
+    border: 1.5px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 0.88rem;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    margin-top: 4px;
+  }
+  .form-control-sm:focus { border-color: #2536a9; outline: none; }
