@@ -43,14 +43,14 @@ transition: color 0.3s ease transform 0.3s ease-in-out;
 }
 .nav-link:hover{
  color: var(--pink-color) !important;
- transform: scale(1.15);
+ transform: scale(1.05);
 }
 .container{
  margin-bottom: 30px;
 }
 .login-button{
 font-family: "Raleway",sans-serif;
-background: var(--button-background);
+background: var(--button-color);
 color: white;
 padding: 10px 24px;
 border-radius: 20px;
