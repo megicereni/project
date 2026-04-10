@@ -1,3 +1,9 @@
+:root{
+ --pink-color: #E91E8C;
+ --box-color :rgba(7, 36, 138, 0.63);
+ --footer-background: #1e3a8a;
+ --button-color: #4A90E2;
+}
 * { box-sizing: border-box; }
   body {
     font-family: 'Raleway', sans-serif;
@@ -89,7 +95,7 @@
   }
 
   .btn-auth {
-    background: #E91E8C;
+    background: var(--pink-color);
     color: #fff;
     border: none;
     border-radius: 50px;
@@ -135,7 +141,7 @@
     color: #999;
   }
   .back-link a { color: #2536a9; text-decoration: none; font-weight: 600; }
-  .back-link a:hover { color: #E91E8C; }
+  .back-link a:hover { color: var(--pink-color); }
 
   .panel { display: none; }
   .panel.active { display: block; }

@@ -1,3 +1,9 @@
+:root{
+ --pink-color: #E91E8C;
+ --box-color :rgba(7, 36, 138, 0.63);
+ --footer-background: #1e3a8a;
+ --button-color: #4A90E2;
+}
 body{
  font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -19,9 +25,8 @@ position: fixed;
   text-shadow: 0 1px 6px rgba(0,0,0,0.6);
 }
 .nav-link1.active{
-color: #E91E8C !important;
+color: var(--pink-color) !important;
 }
-
 .logo{
 text-transform: uppercase;
 font-family: "Raleway",sans-serif;
@@ -37,7 +42,7 @@ color: white;
 transition: color 0.3s ease transform 0.3s ease-in-out;
 }
 .nav-link:hover{
- color: #E91E8C  !important;
+ color: var(--pink-color) !important;
  transform: scale(1.15);
 }
 .container{
@@ -45,7 +50,7 @@ transition: color 0.3s ease transform 0.3s ease-in-out;
 }
 .login-button{
 font-family: "Raleway",sans-serif;
-background: #4A90E2;
+background: var(--button-background);
 color: white;
 padding: 10px 24px;
 border-radius: 20px;
@@ -56,7 +61,7 @@ border-radius: 20px;
 }
 
 .hero-btn{
-  background: #E91E8C;
+  background: var(--pink-color);
   color: #fff;
   border: none;
   border-radius: 30px;
@@ -69,7 +74,7 @@ border-radius: 20px;
 
 .hero-btn:hover {
   background: #fff;
-  color: #E91E8C;
+  color: var(--pink-color);
   transform: scale(1.05);
 }
 
@@ -116,7 +121,7 @@ letter-spacing: 0.5px;
 .pink-line {
     width: 50px;
     height: 4px;
-    background: #E91E8C;
+    background: var(--pink-color);
     border-radius: 2px;
     margin: 10px auto 0;
 }
@@ -146,8 +151,6 @@ letter-spacing: 0.5px;
 .card h3 {
   margin: 10px 0;
 }
-
-
 .itinerary-card {
     border-radius: 16px;
     overflow: hidden;
@@ -218,7 +221,7 @@ letter-spacing: 0.5px;
     font-family: 'Raleway', sans-serif;
 }
 .btn-success {
-    background: #E91E8C;
+    background: var(--pink-color);
     border: none;
     border-radius: 30px;
     padding: 10px 28px;
@@ -232,9 +235,8 @@ letter-spacing: 0.5px;
     transform: scale(1.04);
 }
 footer{
-background: #1e3a8a;
+background: var(--footer-background);
 }
-
 footer .copyright{
 background: rgba(0, 0, 0, 0.2);
 }

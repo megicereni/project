@@ -1,13 +1,18 @@
-* { box-sizing: border-box; }
-  body {
+:root{
+ --pink-color: #E91E8C;
+ --box-color :rgba(7, 36, 138, 0.63);
+ --footer-background: #1e3a8a;
+ --button-color: #4A90E2;
+}
+*
+ { box-sizing: border-box; }
+body {
     font-family: 'Raleway', sans-serif;
     background: #f4f6fb;
     margin: 0;
     color: #333;
   }
-
-  /* ── NAVBAR ─────────────────────────── */
-  .dash-navbar {
+.dash-navbar {
     background: rgba(37,54,169,0.92);
     backdrop-filter: blur(10px);
     padding: 14px 0;
@@ -28,7 +33,7 @@
     font-weight: 500;
   }
   .btn-logout {
-    background: #E91E8C;
+    background: var(--pink-color);
     color: #fff;
     border: none;
     border-radius: 50px;
@@ -39,10 +44,8 @@
     cursor: pointer;
     transition: all 0.2s;
   }
-  .btn-logout:hover { background: #c7136f; }
-
-  /* ── HERO BAR ────────────────────────── */
-  .dash-hero {
+.btn-logout:hover { background: #c7136f; }
+.dash-hero {
     background: linear-gradient(135deg, #2536a9 0%, #1a1a5e 100%);
     padding: 40px 0 50px;
   }
@@ -52,12 +55,12 @@
     color: #fff;
     margin-bottom: 4px;
   }
-  .dash-hero h1 span { color: #E91E8C; }
+  .dash-hero h1 span { color: var(--pink-color); }
   .dash-hero p { color: rgba(255,255,255,0.7); font-size: 0.9rem; margin: 0; }
 
   .avatar {
     width: 60px; height: 60px;
-    background: #E91E8C;
+    background: var(--pink-color);
     border-radius: 50%;
     display: flex; align-items: center; justify-content: center;
     font-size: 1.5rem;
@@ -66,9 +69,7 @@
     font-family: 'Playfair Display', serif;
     border: 3px solid rgba(255,255,255,0.3);
   }
-
-  /* ── STAT CARDS ──────────────────────── */
-  .stat-card {
+.stat-card {
     background: #fff;
     border-radius: 16px;
     padding: 24px 20px;
@@ -87,13 +88,12 @@
     flex-shrink: 0;
   }
   .stat-icon.blue  { background: #e8eeff; color: #2536a9; }
-  .stat-icon.pink  { background: #fde8f3; color: #E91E8C; }
+  .stat-icon.pink  { background: #fde8f3; color: var(--pink-color); }
   .stat-icon.green { background: #e8f5e9; color: #2e7d32; }
   .stat-icon.gold  { background: #fff8e1; color: #f9a825; }
   .stat-num  { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: #1a1a5e; line-height: 1; }
   .stat-label{ font-size: 0.78rem; color: #888; margin-top: 3px; }
 
-  /* ── SECTION TITLES ──────────────────── */
   .section-head {
     font-family: 'Playfair Display', serif;
     font-size: 1.3rem;
@@ -104,13 +104,12 @@
   .pink-dot {
     display: inline-block;
     width: 8px; height: 8px;
-    background: #E91E8C;
+    background: var(--pink-color);
     border-radius: 50%;
     margin-right: 8px;
     vertical-align: middle;
   }
 
-  /* ── PROFILE CARD ────────────────────── */
   .profile-card {
     background: #fff;
     border-radius: 16px;
@@ -129,7 +128,6 @@
   .profile-row .label { color: #888; font-weight: 600; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em; }
   .profile-row .value { color: #333; font-weight: 500; }
 
-  /* ── BOOKING HISTORY ─────────────────── */
   .booking-card {
     background: #fff;
     border-radius: 14px;
@@ -155,7 +153,6 @@
   .booking-price { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: #E91E8C; white-space: nowrap; }
   .badge-confirmed { background: #e8f5e9; color: #2e7d32; font-size: 0.72rem; padding: 3px 10px; border-radius: 50px; font-weight: 600; }
 
-  /* ── QUICK LINKS ─────────────────────── */
   .quick-link {
     background: #fff;
     border-radius: 14px;
@@ -171,7 +168,6 @@
   .quick-link i { font-size: 1.8rem; color: #2536a9; display: block; margin-bottom: 8px; }
   .quick-link span { font-size: 0.85rem; font-weight: 600; }
 
-  /* ── EDIT FORM ───────────────────────── */
   .edit-form { display: none; }
   .edit-form.show { display: block; }
   .btn-edit {
@@ -188,7 +184,7 @@
   }
   .btn-edit:hover { background: #2536a9; color: #fff; }
   .btn-save {
-    background: #E91E8C;
+    background: var(--pink-color);
     border: none;
     color: #fff;
     border-radius: 50px;

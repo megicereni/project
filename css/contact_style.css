@@ -1,3 +1,9 @@
+:root{
+ --pink-color: #E91E8C;
+ --box-color :rgba(7, 36, 138, 0.63);
+ --footer-background: #1e3a8a;
+ --button-color: #4A90E2;
+}
 body{
  font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -20,7 +26,7 @@ position: fixed;
 }
 
 .nav-link1.active{
-color: #E91E8C !important;
+color: var(--pink-color)!important;
 }
 
 .logo{
@@ -36,12 +42,12 @@ text-decoration: none;
 transition: color 0.3s ease transform 0.3s ease-in-out;
 }
 .nav-link1:hover{
- color: #E91E8C;
+ color: var(--pink-color);
  transform: scale(1.05);
 }
 .login-button,.btn-message{
 font-family: "Raleway",sans-serif;
-background: #4A90E2;
+background: var(--button-color);
 color: white;
 padding: 10px 24px;
 border-radius: 20px;
@@ -78,7 +84,7 @@ list-style: none;
 }
 .ci-icon i {
     font-size: 2rem;
-    color: #E91E8C;
+    color: var(--pink-color);
     margin-bottom: 10px;
 }
 .headline{
@@ -91,14 +97,12 @@ text-shadow: 0 2px 20px rgba(0,0,0,0.4);
 border-radius: 12px;
 }
 .input-box:focus{
-border-color: #E91E8C;
+border-color: var(--pink-color);
 box-shadow: 0 0 0 0.2rem rgba(233, 30, 140, 0.25)
 }
-
 footer{
-background: #1e3a8a;
+background: var(--footer-background);
 }
-
 footer .copyright{
 background: rgba(0, 0, 0, 0.2);
 }

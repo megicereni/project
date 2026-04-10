@@ -1,3 +1,9 @@
+:root{
+ --pink-color: #E91E8C;
+ --box-color :rgba(7, 36, 138, 0.63);
+ --footer-background: #1e3a8a;
+ --button-color: #4A90E2;
+}
 body{
  font-family: 'Raleway', sans-serif;
   font-weight: 300;
@@ -20,7 +26,7 @@ position: fixed;
 }
 
 .nav-link1.active{
-color: #E91E8C !important;
+color: var(--pink-color) !important;
 }
 
 .logo{
@@ -35,15 +41,15 @@ letter-spacing: 0.5px;
 transition: color 0.3s ease transform 0.3s ease-in-out;
 }
 .nav-link:hover{
- color: #E91E8C  !important;
- transform: scale(1.15);
+ color: var(--pink-color)  !important;
+ transform: scale(1.05);
 }
 .container{
  margin-bottom: 30px;
 }
 .login-button{
 font-family: "Raleway",sans-serif;
-background: #4A90E2;
+background: var(--button-color);
 color: white;
 padding: 10px 24px;
 border-radius: 20px;
@@ -53,7 +59,7 @@ border-radius: 20px;
   color: #fff;
 }
 .hero-btn{
-  background: #E91E8C;
+  background: var(--pink-color);
   color: #fff;
   border: none;
   border-radius: 30px;
@@ -63,14 +69,13 @@ border-radius: 20px;
   letter-spacing: 2px;
   transition: all 0.3s ease;
 }
-
 .hero-btn:hover {
   background: #fff;
-  color: #E91E8C;
+  color: var(--pink-color);
   transform: scale(1.05);
 }
 footer{
-background: #1e3a8a;
+background: var(--footer-background);
 }
 
 footer .copyright{
@@ -80,8 +85,6 @@ background: rgba(0, 0, 0, 0.2);
 max-width: 220px;
 height: 35px;
 }
-
-
 .about-hero {
     background-image: url('../images/backgrounds/about2.jpg');
     background-size: cover;
@@ -117,7 +120,7 @@ height: 35px;
 .pink-line {
     width: 50px;
     height: 4px;
-    background: #E91E8C;
+    background: var(--pink-color);
     border-radius: 2px;
     margin: 10px auto 0;
 }
@@ -126,7 +129,7 @@ height: 35px;
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background: #E91E8C;
+    background: var(--pink-color);
     display: flex;
     align-items: center;
     justify-content: center;
