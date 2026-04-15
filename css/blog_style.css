@@ -119,6 +119,7 @@ height: 35px;
 .card{
   width: 330px;
   height: 450px;
+  margin: 0 auto;
 }
 .card:hover {
   transform: scale(1.03);
